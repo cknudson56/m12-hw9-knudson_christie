@@ -7,17 +7,17 @@ function wrapper() {
 		navBar.classList.toggle('red');
 	};
 
-  const loopThrough = () => {
-  	let thisButtonText = this.childNodes[0].nodeValue;
-  	let thisButtonLength = thisButtonText.length;
+	const loopThrough = () => {
+  		let thisButtonText = this.childNodes[0].nodeValue;
+  		let thisButtonLength = thisButtonText.length;
 
-    for (let i = 0; i < thisButtonLength * 2; i++) {
-    	setTimeout(function() {
-    		changeColor();
-    	}, i * 1000);
-    }
+    	for (let i = 0; i < thisButtonLength * 2; i++) {
+    		setTimeout(function() {
+    			changeColor();
+    		}, i * 1000);
+    	}
 
-  };
+	};
   loopThrough();
 };
 
